@@ -1,43 +1,42 @@
 ## Overview:
 
-Madoku Craft: Items is a configurable Item system.
-It allows users to customize Items to their specific needs.
-This system splits Items into different Categories.
-You can add and remove Items from the system.
-Most of these features are customizable in the CONFIG files.
+Madoku Craft: Items allows you modify and set certain properties to items.
+It increases the stacking limit by default.
+Additionally, it adds a rarity and leveling system to certain item categories.
+The type of modifications an item can receive is based on their category.
 
-## Dependencies
+## Dependencies:
 
 - Fabric API
-- Madoku Craft API
+- Madoku Craft: Core
 
-## Features
+## Features:
 
-Material Tiers:
+**Material Tiers:**
 
-- By default, Golden variant Tools were enhanced to have better stats than Iron variants.
-- All Tools had their stats increased across all Material variants.
+- By default, golden variant tools were enhanced to have better stats than iron variants.
+- All tools, weapons, and armor had their stats adjusted across all material variants.
 
-Fuel Items:
+**Fuel Items:**
 
-- Magma Blocks were added as a new default Fuel Item.
-- You can add, remove and modify Fuel Items in the CONFIG files.
+- Magma Blocks are a new default fuel item.
+- You can add, remove and modify fuel items in the config files.
 
-Item Customization:
+**Stacking Limit:**
 
-- The custom Item system allows you to modify whether an Item can stack or not.
-- The Item system also allows you to add certain properties to an Item based on their Category.
-- You can change what Categories an Item has.
-- For example, you can adjust an Axe to have the Sword's Attack Speed.
+- Item Stacking limit is adjustable.
+- By default, stacking limit was increased to 128 from 64 items per ptack.
+- The stacking limit can be increased up to 999 million items per stack in the config files.
 
-Stacking Limit:
+**Item Rarity:**
 
-- Item Stacking Limit is adjustable.
-- By default, Stacking Limit was increased to 128 from 64 Items per Stack.
-- Stacking Limit can be increased up to 999 million Items per Stack.
+- The rarity system increases an item's stats based on the item's rarity.
+- The rarity system only applies to items in the armor, tool, and weapon categories.
+- Rarity applies to items crafted, generated in loot, or spawned via command.
 
-Item Rarity:
+**Item Level:**
 
-- The Rarity system increases an Item's stats based on the Item's Rarity.
-- The Rarity system only applies to Items in the Tools Category.
-- Rarity applies to Items Crafted, generated in Loot, or spawned via Command.
+- The level system increases an item's stats based on the item's level.
+- An item's level can be increased through the smithing table.
+- The level system only applies to items in the armor, tool, and weapon categories.
+- To level up an item, it requires a duplicate item of the same level/rarity and experience bottles.
