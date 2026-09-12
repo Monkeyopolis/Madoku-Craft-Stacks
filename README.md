@@ -1,22 +1,42 @@
-## Madoku Craft: Items
+## Overview:
 
-Madoku Craft: Items is a configurable Item system.
-It allows users to customize Items to their specific needs.
-This system splits Items into different Categories.
-You can add and remove Items from the system.
+Madoku Craft: Items allows you modify and set certain properties to items.
+It increases the stacking limit by default.
+Additionally, it adds a rarity and leveling system to certain item categories.
+The type of modifications an item can receive is based on their category.
 
-## Dependencies
+## Dependencies:
 
 - Fabric API
-- Madoku Craft API
+- Madoku Craft: Core
 
-## Implementation
+## Features:
 
-This MOD by default enhanced Golden tools to be better than Iron variants.
-All Tool Items had their stats enhanced as well.
-Fuel Items were also modified, Magma Blocks now count as a Fuel Item.
-You can modify whether an Item can Multi Stack or not.
-You can also modify Items to have properties of other Items, as long as that property belongs to that Item Category.
-For example, you can modify an Axe to have the Spear's attack range.
-This MOD also contains a Rarity system, which applies to all Items in the Tools Category.
-Higher rarity increases a Tool's stats, there's a Rarity Indicator for Tools.
+**Material Tiers:**
+
+- By default, golden variant tools were enhanced to have better stats than iron variants.
+- All tools, weapons, and armor had their stats adjusted across all material variants.
+
+**Fuel Items:**
+
+- Magma Blocks are a new default fuel item.
+- You can add, remove and modify fuel items in the config files.
+
+**Stacking Limit:**
+
+- Item Stacking limit is adjustable.
+- By default, stacking limit was increased to 128 from 64 items per ptack.
+- The stacking limit can be increased up to 999 million items per stack in the config files.
+
+**Item Rarity:**
+
+- The rarity system increases an item's stats based on the item's rarity.
+- The rarity system only applies to items in the armor, tool, and weapon categories.
+- Rarity applies to items crafted, generated in loot, or spawned via command.
+
+**Item Level:**
+
+- The level system increases an item's stats based on the item's level.
+- An item's level can be increased through the smithing table.
+- The level system only applies to items in the armor, tool, and weapon categories.
+- To level up an item, it requires a duplicate item of the same level/rarity and experience bottles.

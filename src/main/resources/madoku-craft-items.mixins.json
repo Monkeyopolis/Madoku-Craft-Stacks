@@ -1,28 +1,16 @@
 {
   "required": true,
-  "package": "madoku.craft.items.mixin",
+  "package": "madoku.craft.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AbstractFurnaceFuelDurationMixin",
-    "ContainerStackLimitMixin",
-    "CraftingMenuRarityMixin",
-    "FuelValuesMixin",
-    "InventoryMenuRarityMixin",
-    "ItemComponentsAccessor",
-    "ItemInputRarityMixin",
-    "ItemStackCodecMixin",
-    "ItemStackDurabilityLoreMixin",
-    "ItemStackMaxSizeMixin",
-    "LootTableRarityMixin",
-    "PlayerInventoryDeathDropMixin",
-    "ResultSlotRarityMixin",
-    "SmithingTransformRecipeRarityMixin"
+    "itemstack.ContainerStackLimitMixin",
+    "itemstack.ItemStackCodecMixin",
+    "itemstack.ItemStackDurabilityLoreMixin",
+    "itemstack.ItemStackMaxSizeMixin"
   ],
   "client": [
-    "client.GuiGraphicsRarityOverlayMixin",
-    "client.GuiGraphicsStackCountMixin"
+    "itemstack.GuiGraphicsItemRarityBarMixin",
+    "itemstack.GuiGraphicsStackCountMixin"
   ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  "injectors": { "defaultRequire": 1 }
 }
